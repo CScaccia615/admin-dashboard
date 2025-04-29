@@ -6,6 +6,6 @@
   <li>HTML</li>
   <li>CSS Grid</li>
 </ul>
-<hr />
+
 <h2>Reflection:</h2>
 <em>To come upon project completion.</em>
