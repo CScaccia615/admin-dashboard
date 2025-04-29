@@ -28,6 +28,8 @@ html {
     grid-template-areas: 
     "search notifications user-icon user-name"
     "user-greeting user-buttons user-buttons user-buttons";
+
+    justify-content: space-evenly;
 }
 
 .search-area {
@@ -58,6 +60,7 @@ html {
 
 .notifications{
     grid-area: notifications;
+    justify-self: end;
 
 }
 
@@ -68,10 +71,12 @@ html {
 
 .user-icon {
     grid-area: user-icon;
+    justify-self: center;
 }
 
 .user-name {
     grid-area: user-name;
+    justify-self: start;
 }
 
 .user-greeting {
@@ -81,6 +86,8 @@ html {
 .user-btn-group {
     grid-area: user-buttons;
 }
+
+/*SIDE NAV */
 
 .side-nav {
     background-color:lightskyblue; /* for debugging */
