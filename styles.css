@@ -30,12 +30,23 @@ html {
     "user-greeting user-buttons user-buttons user-buttons";
 }
 
+.search-area {
+    grid-area: search;
+}
+
+.search-area img {
+    width:18px;
+    height: auto;
+    margin-right:10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
 .search-bar{
-
-
     background-color:#E2E8F0;
     width: 90%;
     height: 30px;
+    display: inline-block;
 
     border-radius: 10px;
 
