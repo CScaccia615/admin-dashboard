@@ -23,13 +23,15 @@ html {
     grid-row-start: 1;
 
     display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas: 
     "search notifications user-icon user-name"
     "user-greeting user-buttons user-buttons user-buttons";
 }
 
 .search-bar{
-    grid-area: search;
+
 
     background-color:#E2E8F0;
     width: 90%;
