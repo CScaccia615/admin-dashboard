@@ -23,8 +23,8 @@ html {
     grid-row-start: 1;
 
     display: grid;
-    grid-template-columns: 3fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 5fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
     grid-template-areas: 
     "search notifications user-icon user-name"
     "user-greeting user-buttons user-buttons user-buttons";
@@ -32,14 +32,18 @@ html {
 
 .search-area {
     grid-area: search;
+    place-items: center;
+
 }
 
 .search-area img {
     width:18px;
     height: auto;
     margin-right:10px;
+    margin-bottom:5px;
     display: inline-block;
-    vertical-align: middle;
+    
+
 }
 
 .search-bar{
@@ -47,13 +51,19 @@ html {
     width: 90%;
     height: 30px;
     display: inline-block;
-
+    
     border-radius: 10px;
 
 }
 
 .notifications{
     grid-area: notifications;
+
+}
+
+.notifications img {
+    width:22px;
+    height: auto;
 }
 
 .user-icon {
