@@ -1,0 +1,42 @@
+/* FONTS */ 
+
+/*GENERAL STYLES */
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+    background-color: aquamarine; /*for debug purposes */
+    display: grid;
+    grid-template-columns: 1fr 3fr  ;
+    grid-template-rows: 1fr 3fr 1fr ;
+}
+
+.header {
+    background-color:darkcyan; /* for debugging */
+
+    grid-column: 2 / 3 ;
+    grid-row-start: 1;
+}
+
+.side-nav {
+    background-color:lightskyblue; /* for debugging */
+
+    grid-column-start: 1;
+    grid-row: 1 / span2;
+}
+
+.main-content {
+    background-color:lightcoral; /* for debugging */
+
+    grid-column: 2 /3;
+    grid-row-start: 2;
+}
+
+.footer {
+    background-color:lightseagreen; /* for debugging */
+    grid-column: 1 / span 3;
+    grid-row-start: 3;
+}
