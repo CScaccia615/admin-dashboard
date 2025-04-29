@@ -51,6 +51,13 @@ html {
     grid-area: user-name;
 }
 
+.user-greeting {
+    grid-area: user-greeting;
+}
+
+.user-btn-group {
+    grid-area: user-buttons;
+}
 
 .side-nav {
     background-color:lightskyblue; /* for debugging */
