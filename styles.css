@@ -88,8 +88,6 @@ html {
     font-size: 16px;
     font-weight:600;
     line-height: 25px;
-    
-
 }
 
 .user-greeting p:nth-child(2){
@@ -97,10 +95,19 @@ html {
     margin-top: 0px;
 }
 
-.user-btn-group {
-    grid-area: user-buttons;
-    
+.user-buttons {
+    grid-area: user-buttons;    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
 }
+
+.user-buttons ul,
+.user-buttons li {
+    list-style: none;
+
+}
+
 
 /*SIDE NAV */
 
