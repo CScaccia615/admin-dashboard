@@ -1,10 +1,13 @@
 /* FONTS */ 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 /*GENERAL STYLES */
 body,
 html {
   height: 100%;
   margin: 0;
+  font-family: "Roboto", Arial, sans-serif;
 }
 
 .container {
@@ -82,14 +85,16 @@ html {
 .user-greeting {
     grid-area: user-greeting;
     
-    font-family: sans-serif;
     font-size: 16px;
+    font-weight:600;
     line-height: 25px;
+    
 
 }
 
 .user-greeting p:nth-child(2){
     font-size: 2em;
+    margin-top: 0px;
 }
 
 .user-btn-group {
