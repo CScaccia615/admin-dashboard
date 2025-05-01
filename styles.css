@@ -95,19 +95,19 @@ html {
     margin-top: 0px;
 }
 
-.user-buttons {
+.user-btn-group {
     grid-area: user-buttons;    
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
+    place-items:start center;
+
+    padding:unset;
 }
 
-.user-buttons ul,
-.user-buttons li {
-    list-style: none;
+.user-btn-group button {
+background-color:#1992D3 ;
 
 }
-
 
 /*SIDE NAV */
 
