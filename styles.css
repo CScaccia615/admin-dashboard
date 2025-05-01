@@ -31,6 +31,7 @@ html {
     grid-template-areas: 
     "search notifications user-icon user-name"
     "user-greeting user-buttons user-buttons user-buttons";
+    gap:10px;
 
     justify-content: space-evenly;
 }
@@ -101,12 +102,21 @@ html {
     grid-template-columns: 1fr 1fr 1fr;
     place-items:start center;
 
-    padding:unset;
 }
 
 .user-btn-group button {
 background-color:#1992D3 ;
+border: none;
+border-radius: 5px;
 
+color: #fff;
+font-weight:500;
+font-size: 1em;
+
+padding: 10px 25px;
+width: 100px;
+
+cursor: pointer;
 }
 
 /*SIDE NAV */
