@@ -5,7 +5,7 @@
 /*GENERAL STYLES */
 body,
 html {
-  height: 100%;
+  height: 100vh;
   margin: 0;
   font-family: "Roboto", Arial, sans-serif;
 }
@@ -169,6 +169,8 @@ html {
     "project-cards project-cards annoucements"
     "project-cards project-cards trending";
     gap:20px;
+
+    font-size: 16px;
 }
 
 /* for article cards, use flexbox for the interior, see ToP lesson resources on this */ 
@@ -178,7 +180,19 @@ html {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-template-rows: auto;
-    gap: 15px;
+    gap: 10px;
+}
+
+.card{ 
+    background-color: #FFFFFF;
+    color: black;
+    text-align: left;
+    height:200px; 
+    
+    border-radius: 5px;
+    border-left: 5px solid gold;
+    padding-left: 10px;
+   
 }
 
 .annoucements {
