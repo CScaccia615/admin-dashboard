@@ -106,30 +106,31 @@ html {
 }
 
 .user-btn-group button {
-background-color:#1992D3 ;
-border: none;
-border-radius: 5px;
+    background-color:#1992D3 ;
+    border: none;
+    border-radius: 5px;
 
-color: #fff;
-font-weight:500;
-font-size: 1em;
+    color: #fff;
+    font-weight:500;
+    font-size: 1em;
 
-padding: 10px 25px;
-width: 100px;
+    padding: 10px 25px;
+    width: 100px;
 
-cursor: pointer;
+    cursor: pointer;
 }
 
 /*SIDE NAV */
 
 .side-nav {
-    background-color:lightskyblue; /* for debugging */
+    background-color:#1A92D4;
 
     grid-column: 1;
     grid-row: 1 / span 2;
 
     display: grid;
-    row-gap: 30px;
+    grid-template-rows: auto;
+    row-gap: 20px;
 
 }
 
@@ -141,21 +142,47 @@ cursor: pointer;
 }
 
 .side-content > div {
-        display: inline-grid;
-        align-items: center;
-        grid-template-columns: 1fr 3fr;
-        grid-template-rows: auto;
-        column-gap: 20px;
+    display: inline-grid;
+    align-items: center;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto;
+    column-gap: 20px;
 
 }
 
+.side-content a {
+    font-weight: 600;
+    color:#fff;
+    
+    text-decoration: none;
+}
+
+/*MAIN CONTENT AREA */
 .main-content {
     background-color:lightcoral; /* for debugging */
 
     grid-column-start: 2;
     grid-row-start: 2;
+
+    display: grid;
+    grid-template-areas: 
+    "project-cards project-cards annoucements"
+    "project-cards project-cards trending";
 }
 
+.project-cards{
+    grid-area: project-cards;
+}
+
+.annoucements {
+    grid-area: announcements;
+}
+
+.trending {
+    grid-area: trending;
+}
+
+/*FOOTER */
 .footer {
     background-color:lightseagreen; /* for debugging */
     grid-column: 1 / span 3;
