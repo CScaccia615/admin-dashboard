@@ -173,13 +173,13 @@ html {
     font-size: 16px;
 }
 
-/* for article cards, use flexbox for the interior, see ToP lesson resources on this */ 
+
 .project-cards{
     grid-area: project-cards;
 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-template-rows: auto;
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 10px;
 }
 
@@ -187,7 +187,7 @@ html {
     background-color: #FFFFFF;
     color: black;
     text-align: left;
-    height:200px; 
+
     
     border-radius: 5px;
     border-left: 5px solid gold;
@@ -195,6 +195,21 @@ html {
    
 }
 
+.card .tags {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-right:5px;
+    gap: 1em;
+    list-style: none;
+}
+
+.tag{
+    background-color: gold; /*for debugging purposes */
+    padding:5px;
+
+    font-size: .75em;
+}
 .annoucements {
     grid-area: announcements;
 }
