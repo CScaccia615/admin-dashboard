@@ -168,10 +168,17 @@ html {
     grid-template-areas: 
     "project-cards project-cards annoucements"
     "project-cards project-cards trending";
+    gap:20px;
 }
 
+/* for article cards, use flexbox for the interior, see ToP lesson resources on this */ 
 .project-cards{
     grid-area: project-cards;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: auto;
+    gap: 15px;
 }
 
 .annoucements {
