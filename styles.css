@@ -228,6 +228,9 @@ html {
     grid-area: annoucements;
     background-color: #fff;
 
+    border-radius: 5px;
+    padding: .5em;
+
     display:grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -247,6 +250,15 @@ html {
 
 .trending {
     grid-area: trending;
+    
+    background-color: #fff;
+
+    border-radius: 5px;
+    padding: .5em;
+
+     display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
 }
 
 /*FOOTER */
