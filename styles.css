@@ -160,7 +160,8 @@ html {
 /*MAIN CONTENT AREA */
 .main-content {
     background-color:lightcoral; /* for debugging */
-
+    padding:.5em;
+    
     grid-column-start: 2;
     grid-row-start: 2;
 
@@ -169,7 +170,8 @@ html {
     "project-cards project-cards annoucements"
     "project-cards project-cards trending";
     gap:20px;
-
+    
+    
     font-size: 16px;
 }
 
@@ -181,6 +183,8 @@ html {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-template-rows: 1fr 1fr 1fr;
     gap: 10px;
+
+    
 }
 
 .card{ 
