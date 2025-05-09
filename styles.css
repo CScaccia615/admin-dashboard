@@ -167,24 +167,31 @@ html {
 
     display: grid;
     grid-template-areas: 
+    "project-header project-header annoucemnt-header"
     "project-cards project-cards annoucements"
+    "project-cards project-cards trending-header"
     "project-cards project-cards trending";
     gap:20px;
     
     font-size: 16px;
 }
 
+.project-header {
+    grid-area:project-header
+}
 
 .project-cards{
     grid-area: project-cards;
 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 10px;
 
     
 }
+
+
 
 .card{ 
     background-color: #FFFFFF;
