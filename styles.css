@@ -167,7 +167,7 @@ html {
 
     display: grid;
     grid-template-areas: 
-    "project-header project-header annoucemnt-header"
+    "project-header project-header annoucement-header"
     "project-cards project-cards annoucements"
     "project-cards project-cards trending-header"
     "project-cards project-cards trending";
@@ -190,8 +190,6 @@ html {
 
     
 }
-
-
 
 .card{ 
     background-color: #FFFFFF;
@@ -220,8 +218,17 @@ html {
 
     font-size: .75em;
 }
+
+.annoucement-header {
+    grid-area:annoucement-header
+}
+
 .annoucements {
     grid-area: announcements;
+}
+
+.trending-header{
+    grid-area: trending-header;
 }
 
 .trending {
