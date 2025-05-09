@@ -15,7 +15,7 @@ html {
     display: grid;
     grid-template-columns: 1fr 6fr  ;
     grid-template-rows: 1fr 3fr 1fr ;
-    gap:10px;
+
 }
 
 /*HEADER */ 
@@ -159,7 +159,8 @@ html {
 
 /*MAIN CONTENT AREA */
 .main-content {
-    background-color:lightcoral; /* for debugging */
+    /*background-color:lightcoral;  for debugging */
+    background-color: #E2E8F0;
     padding:.5em;
 
     grid-column-start: 2;
@@ -224,7 +225,20 @@ html {
 }
 
 .annoucements {
-    grid-area: announcements;
+    grid-area: annoucements;
+    background-color: #fff;
+
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+.annoucements > div {
+    border-bottom:1px solid #777;
+}
+
+.annoucements > div:last-child {
+    border: none;
 }
 
 .trending-header{
