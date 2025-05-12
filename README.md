@@ -10,3 +10,8 @@
 
 <h2>Reflection:</h2>
 <em>To come upon project completion.</em>
+
+<h2>Credits</h2>
+Cat icons - Courtesy of <a href ="https://stock.adobe.com/contributor/210745861/anna-yakushenko?load_type=author&prev_url=detail" target="_blank">Anna Yakushenko on Adobe Stock </a><br />
+UI icons - Google Icons
+Fonts- Google Fonts
