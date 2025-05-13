@@ -169,7 +169,7 @@ html {
     grid-row-start: 2;
 
     display: grid;
-    grid-template-rows: .25fr 1fr .25fr 1fr;
+    grid-template-rows: .15fr 1fr .15fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
     "project-header . annoucement-header"
@@ -189,7 +189,7 @@ html {
     grid-area: project-cards;
 
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
     grid-template-rows:1fr 1fr 1fr;
     gap: 10px;
 
