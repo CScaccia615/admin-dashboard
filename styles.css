@@ -14,7 +14,7 @@ html {
     background-color: aquamarine; /*for debug purposes */
     display: grid;
     grid-template-columns: 1fr 6fr  ;
-    grid-template-rows: 200px 5fr 50px ;
+    grid-template-rows: 175px 5fr 50px ;
 
 }
 
@@ -29,7 +29,7 @@ html {
     padding: .5em;
 
     display: grid;
-    grid-template-columns: 5fr 1fr 1fr 1fr;
+    grid-template-columns: 6fr 1fr 1fr 1fr;
     grid-template-rows: 50px 75px;
     grid-template-areas: 
     "search notifications user-icon user-name"
@@ -102,8 +102,8 @@ html {
 .user-btn-group {
     grid-area: user-buttons;    
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    place-items:start center;
+    grid-template-columns: repeat(3, 1fr);
+    place-items:center;
 
 }
 
@@ -169,8 +169,10 @@ html {
     grid-row-start: 2;
 
     display: grid;
+    grid-template-rows: .25fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
-    "project-header project-header annoucement-header"
+    "project-header . annoucement-header"
     "project-cards project-cards annoucements"
     "project-cards project-cards trending-header"
     "project-cards project-cards trending";
@@ -187,8 +189,8 @@ html {
     grid-area: project-cards;
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows:1fr 1fr 1fr;
     gap: 10px;
 
     
@@ -260,7 +262,7 @@ html {
 
     display:grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
 /*FOOTER */
