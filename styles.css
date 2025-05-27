@@ -85,7 +85,7 @@ html {
     grid-area: user-name;
     justify-self: start;
 }
-
+/*LOOK UP HOW TO MAKE THIS SECTION RESPONSIVE */
 .user-greeting {
     grid-area: user-greeting;
     
@@ -97,13 +97,13 @@ html {
 .user-greeting p {
    margin-top: 0px; 
 }
+
 .user-greeting p:nth-child(2){
-    font-size: 2em;
-    
+    font-size: 2em; 
 }
 
 .user-greeting div  {
-    display: inline-block;
+    display: inline-grid;
     padding-left:10px;
     vertical-align: text-top;
 }
