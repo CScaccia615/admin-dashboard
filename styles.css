@@ -34,7 +34,7 @@ html {
     grid-template-areas: 
     "search notifications user-icon user-name"
     "user-greeting user-buttons user-buttons user-buttons";
-    gap:10px;
+    gap:5px;
 
     justify-content: space-evenly;
 }
@@ -94,9 +94,18 @@ html {
     line-height: 25px;
 }
 
+.user-greeting p {
+   margin-top: 0px; 
+}
 .user-greeting p:nth-child(2){
     font-size: 2em;
-    margin-top: 0px;
+    
+}
+
+.user-greeting div  {
+    display: inline-block;
+    padding-left:10px;
+    vertical-align: text-top;
 }
 
 .user-btn-group {
