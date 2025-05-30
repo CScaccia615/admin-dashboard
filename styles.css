@@ -85,6 +85,7 @@ html {
     grid-area: user-name;
     justify-self: start;
 }
+
 /*LOOK UP HOW TO MAKE THIS SECTION RESPONSIVE */
 .user-greeting {
     grid-area: user-greeting;
@@ -131,41 +132,52 @@ html {
     cursor: pointer;
 }
 
+.user-btn-group button:hover {
+    background-color:#4B4F54 ;
+}
 /*SIDE NAV */
-
+/*RE WRITE ENTIRE SECTION */
 .side-nav {
     background-color:#1A92D4;
 
     grid-column: 1;
     grid-row: 1 / span 2;
 
+    /*sub-grid*/
     display: grid;
-    grid-template-rows: auto;
+    grid-template-rows: .5fr repeat(2, 1fr);
     row-gap: 20px;
-
+}
+.logo {
+    place-self: center;
 }
 
-.logo,
-.side-content {
-    display: grid;
-    place-items: center start;
+.side-content{
+    /* for debugging*/
+    background-color:plum ; 
+    border: 1px solid orange;
+    /*end debugging*/
+
+    align-content: start;
+    
+   
+}
+
+.side-link{
+    /*for debugging */
+    background-color: aquamarine;
+    border: 1px solid purple;
+    /*end debugging*/ 
+
+    padding: 1em;
+    place-content: center;
     
 }
 
-.side-content > div {
-    display: inline-grid;
-    align-items: center;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: auto;
-    column-gap: 20px;
-
-}
-
-.side-content a {
-    font-weight: 600;
-    color:#fff;
-    
-    text-decoration: none;
+.side-link a,
+.side-link img {
+   display: inline-block;
+   vertical-align: middle;
 }
 
 /*MAIN CONTENT AREA */
