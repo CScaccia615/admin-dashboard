@@ -136,7 +136,6 @@ html {
     background-color:#4B4F54 ;
 }
 /*SIDE NAV */
-/*RE WRITE ENTIRE SECTION */
 .side-nav {
     background-color:#1A92D4;
 
@@ -153,22 +152,12 @@ html {
 }
 
 .side-content{
-    /* for debugging*/
-    background-color:plum ; 
-    border: 1px solid orange;
-    /*end debugging*/
-
     align-content: start;
     
    
 }
 
 .side-link{
-    /*for debugging */
-    background-color: aquamarine;
-    border: 1px solid purple;
-    /*end debugging*/ 
-
     padding: 1em;
     place-content: center;
     
@@ -178,6 +167,16 @@ html {
 .side-link img {
    display: inline-block;
    vertical-align: middle;
+   color: #FFFFFF;
+   font-size: 1em;
+   text-decoration: none;
+   cursor: pointer;
+}
+
+.side-link img {
+    width: 25px;
+    height: auto;
+    padding-right:8px;
 }
 
 /*MAIN CONTENT AREA */
