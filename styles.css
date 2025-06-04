@@ -8,6 +8,7 @@ html {
   height: 100vh;
   margin: 0;
   font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
 }
 
 .container {
@@ -135,6 +136,7 @@ html {
 .user-btn-group button:hover {
     background-color:#4B4F54 ;
 }
+
 /*SIDE NAV */
 .side-nav {
     background-color:#1A92D4;
@@ -144,11 +146,16 @@ html {
 
     /*sub-grid*/
     display: grid;
-    grid-template-rows: .5fr repeat(2, 1fr);
+    grid-template-rows: 175px repeat(2, .25fr);
     row-gap: 20px;
 }
 .logo {
     place-self: center;
+    padding:10px;
+}
+
+.logo img {
+    width:200px
 }
 
 .side-content{
@@ -181,7 +188,6 @@ html {
 
 /*MAIN CONTENT AREA */
 .main-content {
-    /*background-color:lightcoral;  for debugging */
     background-color: #E2E8F0;
     padding:.5em;
 
@@ -201,6 +207,7 @@ html {
     font-size: 16px;
 }
 
+/* MAIN PROJECTS */
 .project-header {
     grid-area:project-header
 }
@@ -223,8 +230,9 @@ html {
 
     
     border-radius: 5px;
-    border-left: 5px solid gold;
+    border-left: 8px solid #59BEC9;
     padding: .5em;
+    
    
 }
 
@@ -238,12 +246,18 @@ html {
 }
 
 .tag{
-    background-color: gold; /*for debugging purposes */
+    background-color: #D6E865; /*for debugging purposes */
     padding:5px;
 
     font-size: .75em;
 }
 
+.title {
+    font-size: large;
+    font-weight: 700;
+}
+
+/*ANNOUCEMENTS */
 .annoucement-header {
     grid-area:annoucement-header
 }
@@ -268,6 +282,7 @@ html {
     border: none;
 }
 
+/*TRENDING */
 .trending-header{
     grid-area: trending-header;
 }
