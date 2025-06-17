@@ -4,92 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
-    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href="stylesNew.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <!--CONTAINER-->
     <div class="container">
-    <!--HEADER-->
-        <div class="header">
-            <div class="search-area">
-                <img src="images/icon_search.png">
-                <div class="search-bar">
+        <div class="sideNav">
+            
+                 <img class="logo" src="images/logo.png" alt="logo for Admin Dashboard">
+
+            <nav>
+                <ul class="side-content">
+                    <li><a href="#" class="side-link"> <img src="images/icon_home.png" alt="click here for homepage">Home</a></li>
+                    <li><a href="#" class="side-link"><img src="images/icon_profile.png" alt="click here for user profile">Profile</a></li>
+                    <li><a href="#" class="side-link"><img src="images/icon_msg.png" alt="click here to view messages">Messages</a></li>
+                    <li><a href="#" class="side-link"><img src="images/icon_history.png" alt="click here for History">History</a></li>
+                    <li><a href="#" class="side-link"><img src="images/icon_tasks.png" alt="click here for tasks">Tasks</a></li>
+                    <li><a href="#" class="side-link"><img src="images/icon_communities.png" alt="click here for Communities">Communities</a></li>
+                </ul>
+
+            
+                <ul class="side-content">
+                    <li><a href="#" class="side-link"><img src="images/icon_settings.png" alt="click here for settings">Settings</a></li>
+                    <li><a href="#" class="side-link"><img src="images/icon_support.png" alt="click here for support">Support</a></li>
+                    <li><a href="#" class="side-link"><img src="images/icon_privacy.png" alt="click here for privacy information">Privacy</a></li>
+                </ul>
+
+            </nav>
+        </div>
+        
+        <div class="mainHeader">
+            <div class="search">
+                  <img src="images/icon_search.png">
+                <div class="search-bar"></div>
+            </div>
+            <div class="user-account">
+                <div class="notifications">
+                    <img src="images/icon_notification.png">
+                </div>
+                <div class="user-icon">
+                    <img src="images/user-icon.png">
+                </div>
+                <div class="user-name">
+                    Jane Doe
                 </div>
             </div>
-            <div class="notifications">
-                <img src="images/icon_notification.png">
-            </div>
-            <div class="user-icon">
-                <img src="images/user-icon.png" style="width: 50px;">
-            </div>
-            <div class="user-name">
-                Jane Doe
-            </div>
+
             <div class="user-greeting">
-                <div><img src="images/user-icon.png" style="width: 75px;"></div>
-                <div><p>Hi there,</p>
-                <p>Jane Doe (@jdoe)</p></div>
+                <img src="images/user-icon.png">
+                <p>Hi there,<br /><span class="user-greeting-lrg">Jane Doe</span></p>
             </div>
-            <div class="user-btn-group">
+            <div class="user-btns">
                 <button type="button">New</button>
                 <button type="button">Upload</button>
                 <button type="button">Share</button>
             </div>
         </div>
-    <!--END HEADER-->
-
-    <!--SIDE NAV-->
-        <div class="side-nav">
-           
-                <div class="logo">
-                    <img src="images/logo.png">
-                </div>
-         
-            
-            <div class="side-content">
-                <div class="side-link">
-                <a href="#"> <img src="images/icon_home.png" alt="click here for homepage">Home</a>
-                </div>
-                <div class="side-link">
-                    <a href="#"><img src="images/icon_profile.png" alt="click here for user profile">Profile</a>
-                </div>
-                <div class="side-link">
-                    <a href="#"><img src="images/icon_msg.png" alt="click here to view messages">Messages</a>
-                </div>
-                <div class="side-link">
-                    <a href="#"><img src="images/icon_history.png" alt="click here for History">History</a>
-                </div>
-                <div class="side-link">
-                    <a href="#"><img src="images/icon_tasks.png" alt="click here for tasks">Tasks</a>
-                </div>
-                <div class="side-link">
-                    <a href="#"><img src="images/icon_communities.png" alt="click here for Communities">Communities</a>
-                </div>
-            </div>
-
-            <div class="side-content">
-                <div class="side-link">
-                <a href="#"><img src="images/icon_settings.png" alt="click here for settings">Settings</a>
-                </div>
-
-                <div class="side-link">
-                    <a href="#"><img src="images/icon_support.png" alt="click here for support">Support</a>
-                </div>
-
-                <div class="side-link">
-                    <a href="#"><img src="images/icon_privacy.png" alt="click here for privacy information">Privacy</a>
-                </div>
-                
-            </div>
         
-        </div>
-
-    <!--END SIDE NAV-->
-
-    <!--MAIN CONTENT AREA-->
-        <div class="main-content">
-            <h3 class="project-header">My Projects</h3>
-            <!--CONTENT CARDS-->
+        <div class="mainContent">
+            <h3>My Projects</h3>
             <div class="project-cards">
             <div class="card">
                 <p class="title">Recipes</p>
@@ -126,7 +98,7 @@
             </div>
                  <div class="card">
                 <p class="title">Calculator</p>
-                <p>The goal of this project was to show off everything I have learned in the foundations portion of The Odin Project, to create a on screen functional calculator.</p>
+                <p>The goal of this project was to show off everything I have learned in the foundations portion of The Odin Project, by creating a on screen functional calculator.</p>
                 <ul class="tags">
                     <li class="tag">HTML</li>
                     <li class="tag">CSS</li>
@@ -136,50 +108,49 @@
                  <div class="card">
                 <p class="title">Sign Up Form</p>
                 <p>This is the first project in the intermediate HTML and CSS concepts section of the JavaScript path for The Odin Project. The goal of this project was to demonstrate what was taught in creating and manipulating forms.</p>
+            
                 <ul class="tags">
                     <li class="tag">HTML</li>
                     <li class="tag">CSS</li>
                 </ul>
             </div>
-
-
-
         </div>
-            <!--ANNOUCEMENTS-->
-            <h3 class="annoucement-header">Annoucements</h3>
-            <div class="annoucements">
-                <div>
-                   <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.</p> 
-                </div>
-                <div>
-                   <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.</p> 
-                </div>
-                <div>
-                   <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.</p> 
-                </div>
+        </div>
+
+        <div class="annoucements">
+            <h3>Announcements</h3>
+            <div class="announce-container">
+            <div class="announce-txt">
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.</p>
             </div>
-            <!--TRENDING-->
-            <h3 class="trending-header">Trending</h3>
-            <div class="trending">
-                <div>
-                    user 1
-                </div>
-                <div>
-                    user 2
-                </div>
-                <div>
-                    user 3
-                </div>
+            <div class="announce-txt">
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.</p>
+            </div>
+            <div class="announce-txt">
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.</p>
             </div>
         </div>
-    <!--END MAIN CONTENT AREA-->
+        </div>
 
-    <!--FOOTER-->
-    <div class="footer">
-        <p style="text-align: center;">&copy; Courtney Scaccia. Created on Apr 29. 2025 | <a href="https://github.com/Cgeers615" target="_blank">GitHub</a></p>
+        <div class="trending">
+            <h3>Trending</h3>
+            <div class="trend-container">
+                <div class="trending-usr">
+                    icon and user
+                </div>
+                <div class="trending-usr">
+                    icon and user
+                </div>
+                <div class="trending-usr">
+                    icon and user
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            FOOTER
+        </div>
+        
     </div>
-    <!--END FOOTER-->
-    <!--END CONTAINER-->
-</div>
 </body>
 </html>
