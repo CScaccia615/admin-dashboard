@@ -77,7 +77,7 @@ html {
 /*START HEADER SECTION */
 .mainHeader {
     background-color: #fff;
-    border: 1px solid rgb(5, 202, 5);
+    padding:10px;
    
     grid-row: 1;
     grid-column: 2 / span 2;
@@ -93,8 +93,6 @@ html {
 }
 
 .search {
-    border: 1px solid rgb(5, 202, 5);
-
     grid-area: search;   
 
 }
@@ -118,8 +116,6 @@ html {
 
 
 .user-account {
-    border: 1px solid rgb(5, 202, 5);
-
     grid-area:user-account;
     display: grid;
     grid-template-columns: repeat(3, .2fr);
@@ -140,8 +136,6 @@ html {
 }
 
 .user-greeting{
-    border: 1px solid rgb(5, 202, 5);
-
     grid-area: user-greeting;
     justify-self: start;
 }
@@ -161,8 +155,6 @@ html {
 }
 
 .user-btns {
-    border: 1px solid rgb(5, 202, 5);
-
     grid-area: user-buttons;
 
     display: grid;
