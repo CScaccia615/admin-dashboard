@@ -21,7 +21,8 @@ html {
 
 /* MAIN CONTAINER */
 .container {
-    background-color: cornflowerblue; /*for debugging purposes */ 
+ background-color: #E2E8F0;
+
     display: grid;
     grid-template-rows:1fr 2fr 2fr .5fr;
     grid-template-columns: 1fr 3fr 1fr;
@@ -31,7 +32,6 @@ html {
 /*SIDE NAVIGATION STYLE */ 
 .sideNav {
     background-color:#1A92D4;
-    border: 1px solid rgb(176, 5, 202);
    
     grid-row: 1 / 4;
     grid-column: 1 ;
@@ -44,7 +44,9 @@ html {
 }
 
 .logo {
-    grid-row:1;height:50px;
+    grid-row:1;
+    height:50px;
+    place-self: center;
 }
 
 
@@ -187,8 +189,7 @@ html {
 /*START MAIN CONTENT SECTION*/
 
 .mainContent {
-    background-color:palevioletred;
-    border: 1px solid rgb(255, 213, 0);
+   
     padding:10px;
 
     grid-row: 2 / span 2;
