@@ -282,13 +282,13 @@ html {
 
 .trending-usr li {
     border-bottom: 2px solid #D6E865;
-    padding:8px 0px;
+    padding:5px 0px;
 
     list-style: none;
 
     font-weight: 500;
 
-    margin:15px 0px;
+    margin:8px 0px;
 
 }
 
@@ -301,9 +301,17 @@ html {
     margin-right:10px;
 
     vertical-align: middle;
+}
 
-    
-
+.trending-usr p {
+     display: inline-block;
+     margin: unset;
+    vertical-align: middle;
+     
+}
+.trending-txt {
+font-weight: 300;
+color:#282828;
 }
 
 
