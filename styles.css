@@ -18,6 +18,7 @@ html {
   box-sizing: inherit;
 }
 
+
 h6 {
   font-size: 1em;
   margin: 8px 0px;  
@@ -157,8 +158,10 @@ h6 {
 .user-greeting-lrg {
     font-size: 1.5em;
 }
+
 .user-greeting img{
     width:100px;
+    margin-right:10px
 }
 
 .user-btns {
@@ -168,8 +171,7 @@ h6 {
     grid-template-columns: repeat(3, 1fr);
     place-items:center;
 
-    gap:10px;
-    
+    gap:10px;   
 }
 
 .user-btns button {
@@ -194,7 +196,6 @@ h6 {
 /*START MAIN CONTENT SECTION*/
 
 .mainContent {
-   
     padding:10px;
 
     grid-row: 2 / span 2;
@@ -205,6 +206,7 @@ h6 {
     grid-template-columns: repeat(2, 1fr);
 
 }
+
 .mainContent h3 {
     grid-row:1;
     grid-column: 1 /span 2;
@@ -240,6 +242,10 @@ h6 {
     list-style: none;
 }
 
+.title {
+    font-weight: 700;
+}
+
 .tag{
     background-color: #D6E865;
     padding:8px;
@@ -254,9 +260,11 @@ h6 {
     grid-row-start:2;
     grid-column: 3;
 
-    padding:10px;
+    display: grid;
 
+    padding:10px;
 }
+
 .announce-container,
 .trend-container{
     border-radius: 10px;
@@ -281,6 +289,7 @@ h6 {
     grid-row:3;
     grid-column: 3;
 
+
     padding:10px;
 }
 .trending-usr {
@@ -297,7 +306,6 @@ h6 {
     font-weight: 500;
 
     margin:8px 0px;
-
 }
 
 .trending-usr li:last-child {
@@ -314,12 +322,12 @@ h6 {
 .trending-usr p {
      display: inline-block;
      margin: unset;
-    vertical-align: middle;
+     vertical-align: middle;
      
 }
 .trending-txt {
-font-weight: 300;
-color:#282828;
+    font-weight: 300;
+    color:#282828;
 }
 
 
@@ -334,7 +342,6 @@ color:#282828;
 
      text-align: center;
      font-size:.67em;
-
 }
 
 footer p {
