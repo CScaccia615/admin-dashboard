@@ -18,6 +18,11 @@ html {
   box-sizing: inherit;
 }
 
+h6 {
+  font-size: 1em;
+  margin: 8px 0px;  
+}
+
 
 /* MAIN CONTAINER */
 .container {
@@ -263,6 +268,9 @@ html {
     border-bottom: 2px solid #D6E865;
 }
 
+.announce-txt p {
+    margin-top: 8px;
+}
 
 .announce-txt:last-child {
     border-bottom: unset;
